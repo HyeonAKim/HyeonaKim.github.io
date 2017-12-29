@@ -7,8 +7,6 @@ tags: linux
 comments: true
 ---
 
-# Bash Tab 자동 완성시 대소문자 설정 방법
-
 안녕하세요! 오늘은 Bash에서 ```Tab``` 자동 완성 기능에 대해 설명드리려고 합니다. 리눅스 터미널에서 Tab 자동완성 기능(tab-auto-complete)은 매우 유용합니다!!
 
 설정을 하지 않았을 경우 대소문자를 구분합니다. 예를 들면 ```Workspace```에 들어가기 위해선
