@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Compute Engine
-slug: CE
+title: Basic
+slug: basic
 category: gcp
 menu: false
 order: 1
