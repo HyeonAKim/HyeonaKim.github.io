@@ -35,17 +35,20 @@ gcloud init
 
 그 후, config 이름을 설정해주세요! 저는 byeon으로 했습니다
 
-그 이후 ```Choose the account you would like to use to perform operations for this configurations:``` 이란 내용이 나옵니다. 기존에 있던 계정은 ```1```, 새 계정으로 로그인은 ```2```를 눌러주세요(계정의 수마다 숫자가 다를 수 있습니다)
+그 이후 ```Choose the account you would like to use to perform operations for this configurations:``` 이란 내용이 나옵니다.  
+기존에 있던 계정은 ```1```, 새 계정으로 로그인은 ```2```를 눌러주세요(계정의 수마다 숫자가 다를 수 있습니다)
 
 저는 1을 입력했습니다!
 
 
 <img src="https://github.com/zzsza/TIL/raw/8ebd0fd156012110fd273c4c9150b00c2d84580c/Google_Cloud_Platform/img/config_2.png">
 
-그 이후 region 설정을 하게 됩니다. 저는 Compute Engine의 지역인 ```asia-east1```을 그대로 사용하기로 결정했습니다  
+그 이후 region 설정을 하게 됩니다.  
+저는 Compute Engine의 지역인 ```asia-east1```을 그대로 사용하기로 결정했습니다  
 
 # 3. 계정 전환
-이제 gcloud 설정은 모두 끝났고, gcloud 계정 전환하는 방법을 알려드리겠습니다! 2개의 명령어만 기억하면 됩니다 :)   
+이제 gcloud 설정은 모두 끝났고, gcloud 계정 전환하는 방법을 알려드리겠습니다!  
+2개의 명령어만 기억하면 됩니다 :)   
 
 [gcloud config configurations document](https://cloud.google.com/sdk/gcloud/reference/config/configurations/)  
 
