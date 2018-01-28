@@ -118,7 +118,7 @@ comments: true
 - 사용하지 않거나 중복된 설정을 감지할 수 있어야 합니다
 - 환경 설정은 레포지토리를 통해 전체 코드 검토를 통해 진행되야 합니다
 
-# 7. 외부 세계의 변화를 다루기(DEaling with Changes in the External World)
+# 7. 외부 세계의 변화를 다루기(Dealing with Changes in the External World)
 ## 7.1 고정된 임계치 설정(Fixed Thresholds in Dynamic Systems)
 머신러닝 시스템에서 동작을 일으키도록 의사결정 임계값 설정이 필요합니다. 확률로 어떤 클래스 분류를 한다고 하면 0.7 이상이면 해당 클래스로 간주한다 라는 로직이 있스비다. 이 임계치는 수작업으로 설정되어 있으니 자동화하는 방식을 검토하는 것도 좋습니다
 
