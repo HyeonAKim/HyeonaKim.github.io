@@ -29,7 +29,7 @@ comments: true
 
 # 2. 머신러닝 시스템 기술부채의 원인
 
-전통적인 소프트웨어 공학에선 **캡슐화(encapsulation)**와 **모듈 설계(Modele Design)**를 통해 **강한 추상화 경계(Strong abstraction boundaries)**를 만듭니다. 이 경계를 통해 독립된 환경을 만들어 유지보수가 가능한 코드를 만들어 복잡성이 큰 소프트웨어를 성공적으로 만들고 운영하고 있습니다.  
+전통적인 소프트웨어 공학에선 **캡슐화(encapsulation)**와 **모듈 설계(Module Design)**를 통해 **강한 추상화 경계(Strong abstraction boundaries)**를 만듭니다. 이 경계를 통해 독립된 환경을 만들어 유지보수가 가능한 코드를 만들어 복잡성이 큰 소프트웨어를 성공적으로 만들고 운영하고 있습니다.  
 강한 추상화 경계를 통해 해당 컴포넌트의 입력값과 출력값에 대해 **논리적 일관성(logical consistency)**과 **불변성(invariants)**을 구현했습니다. 하지만 기계학습 시스템에서 적용하긴 어렵습니다. 그 이유는 외부 데이터에 의존하지 않고 소프트웨어 로직만으로 구현이 불가능하기 때문입니다. 번역이 난해해서 원문을 작성하자면
 > There desired behavior cannot be effectively expressed in software logic wihtout dependency on external data
 
