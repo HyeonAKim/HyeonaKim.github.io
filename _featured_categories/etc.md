@@ -4,7 +4,7 @@ title: ETC
 slug: etc
 menu: true
 submenu: false
-order: 5
+order: 3
 description: >
   기타 정보
 ---
