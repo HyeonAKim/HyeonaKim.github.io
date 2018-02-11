@@ -47,7 +47,7 @@ google_fonts:        Lato
 google_analytics:    UA-110573232-1
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
-disqus_shortname:    hyeonakim
+disqus_shortname:    https-hyeonakim-github-io-1
 
 # This text will appear in the footer of every page. Markdown enabled.
 copyright:           '&copy; 2017. by HyeonAKim'
