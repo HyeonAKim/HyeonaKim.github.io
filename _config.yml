@@ -18,7 +18,7 @@ tagline:             Data Engineer
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  천천히 조금씩 할수있겠지?
+  천천히 조금씩 할수있겠지? :D
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:

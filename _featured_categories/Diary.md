@@ -4,7 +4,7 @@ title: Diary
 slug: diary
 menu: true
 submenu: false
-order: 3
+order: 1
 description: >
   일상
 ---
