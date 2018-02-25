@@ -2,7 +2,7 @@
 layout: tag-blog
 title: Algorithm
 slug: Algorithm
-category: Python
+category: python
 menu: false
 order: 2
 ---
