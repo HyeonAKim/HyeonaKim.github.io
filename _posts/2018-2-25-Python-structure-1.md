@@ -2,8 +2,8 @@
 layout: post
 title:  "나의 파이썬 프로그래밍"
 subtitle: 파이썬 배우기   
-categories: Python
-tags: Structure
+categories: python
+tags: structure
 comments: true
 ---
 
