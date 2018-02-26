@@ -7,7 +7,6 @@ tags: structure
 comments: true
 ---
 
-
 - 에듀위드 컴퓨팅 사고 강의 자료를 바탕으로 정리한 내용입니다.
 
 
