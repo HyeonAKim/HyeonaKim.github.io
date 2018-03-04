@@ -4,5 +4,5 @@ title: Algorithm
 slug: Algorithm
 category: python
 menu: false
-order: 2
+order: 3
 ---

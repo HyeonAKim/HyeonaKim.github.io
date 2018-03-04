@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Structure
-slug: structure
+title: Thinking
+slug: thinking
 category: python
 menu: false
-order: 2
+order: 1
 ---

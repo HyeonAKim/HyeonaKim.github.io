@@ -3,7 +3,7 @@ layout: post
 title:  "문제의 순차적 표현(1)"
 subtitle: 컴퓨팅 사고
 categories: python
-tags: structure
+tags: thinking
 comments: true
 ---
 
