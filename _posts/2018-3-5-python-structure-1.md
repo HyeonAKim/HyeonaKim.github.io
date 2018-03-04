@@ -1,4 +1,11 @@
-
+---
+layout: post
+title:  "파이썬 자료형(1)"
+subtitle: 변수유형,표현
+categories: python
+tags: structure
+comments: true
+---
 - 에듀위드 파이썬을 활용한 기초컴퓨터 프로그래밍 강의를 바탕으로 정리한 내용입니다.
 
 
