@@ -12,7 +12,7 @@ comments: true
 오랜만에 포스팅을 하네요! :)
 그 동안 게으름을 피운것도 있고, 하고 싶은 내용이 너무 많다 보니까 이것도 저것도 해야하는데 언제 다하지? 제자리에서 고민한 시간이 많았습니다. 그러다 결국엔 초심으로 돌아와서 차근차근 정리해보자라는 마음이 들어서 다시 마음을 잡고 글을 쓰고 있습니다. (자기반성)
 
-오늘은 파이썬 자료형-파일편 입니다. 지난 파일 읽고쓰기 라는 포스팅에서 파일을 읽고, 쓰고, 닫고 하는 간단한 방법에 대해 알아보았습니다. 이번에는 조금 더 응용할 수 있는 방법들에 대해 알아보도록 하겠습니다.
+오늘은 파이썬 자료형-파일편 입니다. 지난 [파일 읽고쓰기](https://hyeonakim.github.io/python/2018/04/22/python-structure-4/) 라는 포스팅에서 파일을 읽고, 쓰고, 닫고 하는 간단한 방법에 대해 알아보았습니다. 이번에는 조금 더 응용할 수 있는 방법들에 대해 알아보도록 하겠습니다.
 
 
 ## 1. 파일 열기
@@ -23,9 +23,10 @@ comments: true
 ```python
 fhand = open('mbox.txt','r')
 ```
+![스크린샷 2018-06-24 오후 10.11.33](https://i.imgur.com/4DNirKj.png)  
 
 open 인자는 파일명, 모드가 있습니다.
-파일명은 어떤 파일을 읽을지를 정해주는 역할을 합니다.
+파일명은 어떤 파일을 읽을지를 정해주는 역할을 합니다. [예제 파일](https://www.py4e.com/code3/mbox.txt)
 모드는 파일로 어떤 작업을 할 것인지를 알려줍니다.
 
 open 함수로 파일을 열면 **fhand** 변수에 어떤 정보들이 들어가게 됩니다.
@@ -34,6 +35,7 @@ open 함수로 파일을 열면 **fhand** 변수에 어떤 정보들이 들어�
 ```python
 print(fhand)
 ```
+![스크린샷 2018-06-24 오후 10.14.11](https://i.imgur.com/MnoWtXO.png)  
 
 확인해보니 파일에서 읽어온 정보가 들어 있지 않습니다. 그럼 어떤 정보일까요? 한 번 살펴보니 파일명, 모드, 인코딩 정보가 있네요. 사실 이 안에는 컴퓨터가 어느 문장을 읽고 있는지에 대한 내용도 들어 있습니다.
 
@@ -42,6 +44,9 @@ print(fhand)
 핸들의 변수명은 꼭 fhand가 아니여도 됩니다. 마음대로 정하셔도 됩니다. :)
 
 ### open()사용
+
+![스크린샷 2018-06-24 오후 10.11.33](https://i.imgur.com/GpOl2hQ.png)  
+
 - 핸들 = open(파일명, 모드)
 - 핸들 : 파일을 조작하는데 쓰는 핸들을 반환함
 - 파일명 : 파일명을 뜻하는 문자열 혹은, 파일 경로
@@ -54,6 +59,8 @@ print(fhand)
 ### 개행문자
 파일을 읽을 때는 눈에 보이지 않지만 컴퓨터는 읽을 수 있는 문자가 있습니다. 그게 바로 **개행문자** 라는 특수한 문자입니다.
 개행문자는 각 줄이 끝날때 이를 알리는 역할을 합니다. 우리는 이를 줄바꿈문자라고도 부릅니다.
+
+![스크린샷 2018-06-24 오후 10.20.03](https://i.imgur.com/WgZanJh.png)  
 
 문자열에서는 '\n'으로 표현하기도 합니다.
 여기서 개행문자는 2글자가 아니고 1글자 입니다 :)
@@ -70,9 +77,10 @@ xfile = open('mbox.txt') # 파일을 열고
 for cheese in xfile:  # for문으로 파일핸들을 하나씩 가져오자!
 	print(cheese)				# 가져온 문장을 출력하자!
 ```
+![스크린샷 2018-06-24 오후 10.27.56](https://i.imgur.com/FuwNKZ7.png)  
 
 파일핸들에는 문자열이 들어 있지는 않지만, 파일핸들변수를 하나씩 가져와 cheese라는 변수에 담고 출력하면 문장이 나옵니다!
-신기하네요!! 파이썬 MAGIC!
+신기하네요!! 파이썬 매직!
 
 
 ### 파일의 줄 세기
@@ -93,7 +101,7 @@ for line in fhand:
 print('Line Count:', count)
 
 ```
-
+![스크린샷 2018-06-24 오후 10.48.28](https://i.imgur.com/oWrnpLX.png)
 
 ### 파일 전체를 읽기
 답답하게 꼭 한 문장씩 읽어야 하냐구요? 물론 한번에 다 읽어 올 수 도 있습니다! 하지만! 파일의 용량이 클 경우에는 주의해서 사용해야 합니다.
@@ -104,10 +112,8 @@ inp = fhand.read()
 print(len(inp))
 print(inp[:20])
 
-
-# 이렇게 하면 어떻게 될까?
-inp = fhand.read(16)
 ```
+![스크린샷 2018-06-24 오후 10.51.36](https://i.imgur.com/oJC3DFM.png)  
 
 ## 3. 파일 내용 탐색_1
 모든 문장을 보는 것은 용량이 너무 클땐 컴퓨터가 힘들고, 한 문장씩 다 보려니 정신적으로 너무 힘듭니다.
@@ -124,9 +130,12 @@ for line in fhand :
 	if line.startswith('From:'):
 		print(line)
 ```
+![스크린샷 2018-06-24 오후 10.57.54](https://i.imgur.com/4PBtUu6.png)
 
 음.. 그런데 말입니다. 줄과 줄 사이의 빈줄은 왜 나오는 걸까요?
-그것은! 문장의 끝에는 개행문자가 있고, print에서 개행문자를 추가로 더하기 때문에 2번 줄바꿈이 되기 때문입니다.
+그것은! 문장의 끝에는 개행문자가 있고, print에서 개행문자를 추가로 더하기 때문에 2번 줄바꿈이 되기 때문입니다.  
+
+![스크린샷 2018-06-24 오후 10.59.24](https://i.imgur.com/hUoNrjL.png)  
 
 각 문장에 있는 개행문자를 제거해보록하겠습니다.
 1. 파일을 연다.
@@ -139,10 +148,10 @@ for line in fhand :
 fhand = open('mbox-short.txt')
 for line in fhand:
 	line = line.rstrip()
-	if line.startwith('From:'):
+	if line.startswith('From:'):
 		print(line)
 ```
-
+![스크린샷 2018-06-24 오후 11.03.33](https://i.imgur.com/ZSglscZ.png)
 
 조금 다른 방법으로도 from 으로 시작하는 문장을 찾을 수 있습니다. continue를 이용하는 방법입니다. 한 문장씩 읽고 from 으로 시작하지 않으면 넘어가는 거죠.
 
@@ -157,10 +166,11 @@ for line in fhand:
 fhand = open('mbox-short.txt')
 for line in fhand:
 	line = line.rstrip()
-	if not line.startwith('From:'):
+	if not line.startswith('From:'):
 		continue
 	print(line)
 ```
+![스크린샷 2018-06-24 오후 11.17.51](https://i.imgur.com/FguBnyV.png)  
 
 ## 4. 파일 내용 탐색_2
 시작하는 단어 말고 특정단어가 들어 있는 문장을 찾고 싶을 땐 어떻게 할까요? in 함수를 써서 구현할 수 있습니다.
@@ -180,6 +190,7 @@ for line in fhand:
 		continue
 	print(line)
 ```
+![스크린샷 2018-06-24 오후 11.20.30](https://i.imgur.com/vz1JWwA.png)  
 
 ## 5. 파일 내용 탐색 업그레이드
 화려하진 않지만 조금 탐색하는 코드를 꾸며볼까요?
@@ -201,11 +212,12 @@ fw= input('Enter the word: ')
 fhand = open(fname)
 count =0
 for line in fhand:
-	if line.startwith(fw):
+	if line.startswith(fw):
 		count = count +1
 print ('There were', count,' ' , fw, ' lines in', fname)
 
 ```
+![스크린샷 2018-06-24 오후 11.26.44](https://i.imgur.com/6b3tQnM.png)  
 
 만약 입력된 파일명이 존재 하지 않거나 잘못 입력할 경우에는 파이썬 오류가 발생하게 됩니다. 이럴 경우에는 예외처리를 해서 오류가 나도 조금 더 자연스럽게? 넘어가 봅시다.
 
@@ -219,6 +231,7 @@ print ('There were', count,' ' , fw, ' lines in', fname)
 9. 1씩 더한다.
 10. 문장을 다 읽으면 이 파일에는 특정단어로 시작하는 문장이 몇 줄입니다. 라고 알려준다.
 
+
 ```python
 fname = input('Enter the file name: ')
 try :
@@ -227,8 +240,9 @@ except:
 	print('File cannot be opened:', fname)
 	quit()
 count = 0
-for line in fhand ;
-	if line.startwith('Subject'):
+for line in fhand :
+	if line.startswith('Subject'):
 		count = count+1
 print('There were', count, 'subject lines in', fname)
 ```
+![스크린샷 2018-06-24 오후 11.35.13](https://i.imgur.com/XflkwSj.png)
