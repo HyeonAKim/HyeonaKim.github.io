@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "파이썬 자료형-딕션너리편"
+title:  "파이썬 자료형-딕셔너리편"
 subtitle: 빈도수를 세려보자.
 categories: python
 tags: structure
